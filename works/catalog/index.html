@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Catalog</title>
+	<script src="js/react/react.js"></script>
+    <script src="js/react/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="container"></div>
+	<script src="js/data.js"></script>
+	<script type="text/babel">
+
+		function Song(props) {
+			return (
+				<li className = "song">
+					<span>{props.artist}</span> - <span>{props.songName}</span>
+				</li>
+			);
+		}
+
+		class SongsList extends React.Component {
+			constructor(props) {
+				super(props);
+				this.state = {
+					displayedSongs: DATA
+				};
+			}
+			handleChange(event) {
+				console.log(event);
+				var searchQuery = event.target.value.toLowerCase();
+				var displayedSongs = DATA.filter(function(el){
+					var searchValue = (el.artist+el.songName).toLowerCase();
+					return searchValue.indexOf(searchQuery) !== -1;
+				});
+				this.setState({
+					displayedSongs: displayedSongs
+				});
+
+			}
+			render() {
+				return (
+					<div className = "songs">
+						<input type = "text" placeholder="Поиск..." className = "searchinput" onChange = {this.handleChange.bind(this)} />
+						<ul className = "songlist">
+							{
+								this.state.displayedSongs.map(function(el){
+									return <Song 
+										key = {el.id} 
+										artist = {el.artist}
+										songName = {el.songName}
+									/>;
+								})
+							}
+						</ul>
+					</div>
+				);
+			}
+		}
+
+		ReactDOM.render(
+			<SongsList />,
+			document.getElementById('container')
+		);
+
+</script>
+</body>
+</html>
