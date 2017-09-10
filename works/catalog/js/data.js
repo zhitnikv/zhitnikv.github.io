@@ -1,72 +1,67 @@
 var DATA = [
 	{
 		id: 1,
-		artist: "Ирина Аллегрова",
-		songName: "Угонщица"
-
+		artist: "Rage Against the machine",
+		songName: "Guerrilla Radio"
 	}, {
 		id: 2,
-		artist: "Макс Барских",
-		songName: "Подруга-ночь"
+		artist: "A Perfect Circle",
+		songName: "3 Libras"
 	}, {
 		id: 3,
-		artist: "Григорий Лепс",
-		songName: "Рюмка водки"
+		artist: "Nancy Sinatra and Lee Hazlewood",
+		songName: "Summer Wine"
 	}, {
 		id: 4,
-		artist: "Ирина Аллегрова",
-		songName: "Императрица"
+		artist: "Beatles",
+		songName: "Blackbird"
 	}, {
 		id: 5,
-		artist: "Ленинград",
-		songName: "WWW"
-	},{
+		artist: "Lera Lynn",
+		songName: "Whiskey"
+	}, {
 		id: 6,
-		artist: "Бумбокс",
-		songName: "Полiна"
-
+		artist: "Portishead",
+		songName: "Airbus Reconstruction"
 	}, {
 		id: 7,
-		artist: "Ани Лорак",
-		songName: "Песня Оксаны"
+		artist: "A Perfect Circle",
+		songName: "Pet"
 	}, {
 		id: 8,
-		artist: "Григорий Лепс",
-		songName: "Ну и что"
+		artist: "Shera Danese",
+		songName: "Closer"
 	}, {
 		id: 9,
-		artist: "Ирина Аллегрова",
-		songName: "Бабы-стервы"
+		artist: "The Cure",
+		songName: "The Holy Hour"
 	}, {
 		id: 10,
 		artist: "Rage Against the machine",
 		songName: "Wake up!"
 	}, {
 		id: 11,
-		artist: "Ани Лорак",
-		songName: "Я стану морем"
-
+		artist: "Patti Smith",
+		songName: "Dancing Barefoot"
 	}, {
 		id: 12,
-		artist: "Макс Барских",
-		songName: "Я хочу танцевать"
+		artist: "Jane Birkin",
+		songName: "Jane B."
 	}, {
 		id: 13,
-		artist: "Браво",
-		songName: "Я то что надо"
+		artist: "Bush",
+		songName: "This House Is On Fire"
 	}, {
 		id: 14,
-		artist: "Браво",
-		songName: "Вася"
+		artist: "PJ Harvey",
+		songName: "When Under Ether"
 	}, {
 		id: 15,
-		artist: "Ленинград",
-		songName: "День Рождения"
-	},{
+		artist: "Crosses",
+		songName: "Nineteen Ninety Four"
+	}, {
 		id: 16,
-		artist: "Ирина Аллегрова",
-		songName: "С Днем Рождения"
-
+		artist: "A Perfect Circle",
+		songName: "Magdalena"
 	}
-
 ];
