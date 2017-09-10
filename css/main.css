@@ -1,60 +1,47 @@
-/ Only necessary for window height sized blocks.
-  html, body, .block {
-    height: 100%;
-  }
-
-  // Class for when element is above threshold
-  .pin-top {
-    position: relative;
-  }
-
-  // Class for when element is below threshold
-  .pin-bottom {
-    position: relative;
-  }
-
-  // Class for when element is pinned
-  .pinned {
-    position: fixed !important;
-  }
-
-  
-
-
-.o3{
+header{
+  text-transform: uppercase; 
+  color: #fff;
+  background-color: #26a69a;
+  letter-spacing: .5px;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  min-height: 80px;
+}
+.description-container{
+  max-width: 1240px;
+  margin: auto;
+  padding-top: 18px;
+}
+.description{
+  font-family: 'Quicksand', sans-serif;
+  line-height: 110%;
+  float: left;
+  text-align: left;
+}
+.contact{
+  font-family: 'Quicksand', sans-serif;
+  line-height: 110%;
+  float: right;
+  text-align: right;
+}
+header:hover{
+  background-color: #2bbbad;
+}
+.container{
+  padding-left: 8px;
+}
+.col{
   width: 415px;
   display: inline-block;
   padding: 11px;
   padding-right: 0px;
 }
-
-.btn{
-  display: block;
-  height: 80px;
+.card-image:hover img{
+  transform: scale(1.02);
+  transition: all 1s linear;
 }
-
-.btn:hover{
-  cursor: inherit;
+footer{
+  border-top: 1px solid;
 }
-
-.head-description{
-  font-family: 'Quicksand', sans-serif;
-  line-height: 110%;
-  width: 1200px;
-  float: left;
-  padding-left: 625px;
-  padding-top: 18px;
-  text-align: left;
-}
-
-.head-contact{
-  font-family: 'Quicksand', sans-serif;
-  line-height: 110%;
-  width: 400px;
-  float: right;
-  padding-right: 30px;
-  padding-top: 18px;
-  text-align: right;
-  margin-right: 613px;
-}
-
