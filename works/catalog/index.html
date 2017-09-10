@@ -7,12 +7,12 @@
     <script src="js/react/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<div id="container"></div>
 	<script src="js/data.js"></script>
 	<script type="text/babel">
-
 		function Song(props) {
 			return (
 				<li className = "song">
@@ -20,7 +20,6 @@
 				</li>
 			);
 		}
-
 		class SongsList extends React.Component {
 			constructor(props) {
 				super(props);
@@ -38,12 +37,11 @@
 				this.setState({
 					displayedSongs: displayedSongs
 				});
-
 			}
 			render() {
 				return (
 					<div className = "songs">
-						<input type = "text" placeholder="Поиск..." className = "searchinput" onChange = {this.handleChange.bind(this)} />
+						<input type = "text" placeholder="search..." className = "searchinput" onChange = {this.handleChange.bind(this)} />
 						<ul className = "songlist">
 							{
 								this.state.displayedSongs.map(function(el){
@@ -59,12 +57,10 @@
 				);
 			}
 		}
-
 		ReactDOM.render(
 			<SongsList />,
 			document.getElementById('container')
 		);
-
 </script>
 </body>
 </html>
