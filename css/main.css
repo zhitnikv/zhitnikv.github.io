@@ -29,6 +29,9 @@ header{
 header:hover{
   background-color: #2bbbad;
 }
+header p{
+  margin: 0px;
+}
 .container{
   padding-left: 8px;
 }
