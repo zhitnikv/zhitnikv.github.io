@@ -13,6 +13,7 @@ header{
   max-width: 1240px;
   margin: auto;
   padding-top: 18px;
+  overflow: auto;
 }
 .description{
   font-family: 'Quicksand', sans-serif;
