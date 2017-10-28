@@ -1,4 +1,4 @@
-header{
+header {
   text-transform: uppercase; 
   color: #fff;
   background-color: #26a69a;
@@ -9,43 +9,44 @@ header{
           box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
   min-height: 80px;
 }
-.description-container{
+.description-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 1240px;
   margin: auto;
   padding-top: 18px;
   overflow: auto;
 }
-.description{
+.description {
   font-family: 'Quicksand', sans-serif;
   line-height: 110%;
-  float: left;
   text-align: left;
 }
-.contact{
+.contact {
   font-family: 'Quicksand', sans-serif;
   line-height: 110%;
-  float: right;
   text-align: right;
 }
 header:hover{
   background-color: #2bbbad;
 }
-header p{
+header p {
   margin: 0px;
 }
-.container{
+.container {
   padding-left: 8px;
 }
-.col{
+.col {
   width: 415px;
   display: inline-block;
   padding: 11px;
   padding-right: 0px;
 }
-.card-image:hover img{
+.card-image:hover img {
   transform: scale(1.02);
   transition: all 1s linear;
 }
-footer{
+footer {
   border-top: 1px solid;
 }
